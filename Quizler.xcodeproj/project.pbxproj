@@ -7,23 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD0BC11C2A5584FC00ED13B6 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC11B2A5584FC00ED13B6 /* WelcomeScreenViewController.swift */; };
+		DD0BC11E2A5585F700ED13B6 /* CLTypingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC11D2A5585F700ED13B6 /* CLTypingLabel.swift */; };
+		DD0BC1202A558F3900ED13B6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC11F2A558F3900ED13B6 /* SignUpViewController.swift */; };
+		DD0BC1222A558F4800ED13B6 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC1212A558F4800ED13B6 /* LogInViewController.swift */; };
+		DD0BC1272A55917100ED13B6 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC1232A55917000ED13B6 /* QuestionModel.swift */; };
+		DD0BC1282A55917100ED13B6 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC1242A55917100ED13B6 /* QuizManager.swift */; };
+		DD0BC1292A55917100ED13B6 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC1252A55917100ED13B6 /* LogInController.swift */; };
+		DD0BC12A2A55917100ED13B6 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC1262A55917100ED13B6 /* SignUpController.swift */; };
+		DD0BC12D2A55A3C200ED13B6 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC12C2A55A3C200ED13B6 /* TopicViewController.swift */; };
+		DD0BC12F2A55A47C00ED13B6 /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC12E2A55A47C00ED13B6 /* CellViewController.swift */; };
+		DD0BC1312A55CDAA00ED13B6 /* QuizSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC1302A55CDAA00ED13B6 /* QuizSettingsViewController.swift */; };
+		DD0F240B2A56B5BD0059CAE6 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F240A2A56B5BD0059CAE6 /* QuizViewController.swift */; };
+		DD0F240D2A56F8680059CAE6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F240C2A56F8680059CAE6 /* ResultViewController.swift */; };
 		DDF33CAF2A557FD70095DBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF33CAE2A557FD70095DBC6 /* AppDelegate.swift */; };
 		DDF33CB12A557FD70095DBC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF33CB02A557FD70095DBC6 /* SceneDelegate.swift */; };
-		DDF33CB32A557FD70095DBC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF33CB22A557FD70095DBC6 /* ViewController.swift */; };
 		DDF33CB62A557FD70095DBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF33CB42A557FD70095DBC6 /* Main.storyboard */; };
 		DDF33CB82A557FD80095DBC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF33CB72A557FD80095DBC6 /* Assets.xcassets */; };
 		DDF33CBB2A557FD80095DBC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF33CB92A557FD80095DBC6 /* LaunchScreen.storyboard */; };
+		DDF33CC42A5581CC0095DBC6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DDF33CC32A5581CC0095DBC6 /* FirebaseAuth */; };
+		DDF33CC62A5581CC0095DBC6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DDF33CC52A5581CC0095DBC6 /* FirebaseFirestore */; };
+		DDF33CC82A55824A0095DBC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDF33CC72A55824A0095DBC6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD0BC11B2A5584FC00ED13B6 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		DD0BC11D2A5585F700ED13B6 /* CLTypingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTypingLabel.swift; sourceTree = "<group>"; };
+		DD0BC11F2A558F3900ED13B6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DD0BC1212A558F4800ED13B6 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		DD0BC1232A55917000ED13B6 /* QuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		DD0BC1242A55917100ED13B6 /* QuizManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
+		DD0BC1252A55917100ED13B6 /* LogInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		DD0BC1262A55917100ED13B6 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		DD0BC12C2A55A3C200ED13B6 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
+		DD0BC12E2A55A47C00ED13B6 /* CellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
+		DD0BC1302A55CDAA00ED13B6 /* QuizSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSettingsViewController.swift; sourceTree = "<group>"; };
+		DD0F240A2A56B5BD0059CAE6 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		DD0F240C2A56F8680059CAE6 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		DDF33CAB2A557FD70095DBC6 /* Quizler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF33CAE2A557FD70095DBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDF33CB02A557FD70095DBC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDF33CB22A557FD70095DBC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDF33CB52A557FD70095DBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDF33CB72A557FD80095DBC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDF33CBA2A557FD80095DBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDF33CBC2A557FD80095DBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF33CC72A55824A0095DBC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +59,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF33CC42A5581CC0095DBC6 /* FirebaseAuth in Frameworks */,
+				DDF33CC62A5581CC0095DBC6 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD0BC12B2A5591B300ED13B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD0BC1262A55917100ED13B6 /* SignUpController.swift */,
+				DD0BC1252A55917100ED13B6 /* LogInController.swift */,
+				DD0BC1232A55917000ED13B6 /* QuestionModel.swift */,
+				DD0BC1242A55917100ED13B6 /* QuizManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DDF33CA22A557FD70095DBC6 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +99,39 @@
 			children = (
 				DDF33CAE2A557FD70095DBC6 /* AppDelegate.swift */,
 				DDF33CB02A557FD70095DBC6 /* SceneDelegate.swift */,
-				DDF33CB22A557FD70095DBC6 /* ViewController.swift */,
-				DDF33CB42A557FD70095DBC6 /* Main.storyboard */,
-				DDF33CB72A557FD80095DBC6 /* Assets.xcassets */,
+				DD0BC12B2A5591B300ED13B6 /* Models */,
+				DDF33CC92A5582BA0095DBC6 /* Views */,
+				DDF33CCA2A5582D00095DBC6 /* Controllers */,
 				DDF33CB92A557FD80095DBC6 /* LaunchScreen.storyboard */,
+				DD0BC11D2A5585F700ED13B6 /* CLTypingLabel.swift */,
+				DDF33CB72A557FD80095DBC6 /* Assets.xcassets */,
 				DDF33CBC2A557FD80095DBC6 /* Info.plist */,
+				DDF33CC72A55824A0095DBC6 /* GoogleService-Info.plist */,
 			);
 			path = Quizler;
+			sourceTree = "<group>";
+		};
+		DDF33CC92A5582BA0095DBC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDF33CB42A557FD70095DBC6 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDF33CCA2A5582D00095DBC6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD0BC11B2A5584FC00ED13B6 /* WelcomeScreenViewController.swift */,
+				DD0BC11F2A558F3900ED13B6 /* SignUpViewController.swift */,
+				DD0BC1212A558F4800ED13B6 /* LogInViewController.swift */,
+				DD0BC12C2A55A3C200ED13B6 /* TopicViewController.swift */,
+				DD0BC1302A55CDAA00ED13B6 /* QuizSettingsViewController.swift */,
+				DD0F240A2A56B5BD0059CAE6 /* QuizViewController.swift */,
+				DD0F240C2A56F8680059CAE6 /* ResultViewController.swift */,
+				DD0BC12E2A55A47C00ED13B6 /* CellViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +150,10 @@
 			dependencies = (
 			);
 			name = Quizler;
+			packageProductDependencies = (
+				DDF33CC32A5581CC0095DBC6 /* FirebaseAuth */,
+				DDF33CC52A5581CC0095DBC6 /* FirebaseFirestore */,
+			);
 			productName = Quizler;
 			productReference = DDF33CAB2A557FD70095DBC6 /* Quizler.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +182,9 @@
 				Base,
 			);
 			mainGroup = DDF33CA22A557FD70095DBC6;
+			packageReferences = (
+				DDF33CC22A5581CB0095DBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DDF33CAC2A557FD70095DBC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF33CC82A55824A0095DBC6 /* GoogleService-Info.plist in Resources */,
 				DDF33CBB2A557FD80095DBC6 /* LaunchScreen.storyboard in Resources */,
 				DDF33CB82A557FD80095DBC6 /* Assets.xcassets in Resources */,
 				DDF33CB62A557FD70095DBC6 /* Main.storyboard in Resources */,
@@ -138,9 +213,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDF33CB32A557FD70095DBC6 /* ViewController.swift in Sources */,
+				DD0BC1282A55917100ED13B6 /* QuizManager.swift in Sources */,
+				DD0BC1272A55917100ED13B6 /* QuestionModel.swift in Sources */,
+				DD0BC11E2A5585F700ED13B6 /* CLTypingLabel.swift in Sources */,
+				DD0BC1312A55CDAA00ED13B6 /* QuizSettingsViewController.swift in Sources */,
 				DDF33CAF2A557FD70095DBC6 /* AppDelegate.swift in Sources */,
+				DD0F240D2A56F8680059CAE6 /* ResultViewController.swift in Sources */,
+				DD0BC1292A55917100ED13B6 /* LogInController.swift in Sources */,
+				DD0F240B2A56B5BD0059CAE6 /* QuizViewController.swift in Sources */,
+				DD0BC12A2A55917100ED13B6 /* SignUpController.swift in Sources */,
+				DD0BC12F2A55A47C00ED13B6 /* CellViewController.swift in Sources */,
+				DD0BC1222A558F4800ED13B6 /* LogInViewController.swift in Sources */,
 				DDF33CB12A557FD70095DBC6 /* SceneDelegate.swift in Sources */,
+				DD0BC11C2A5584FC00ED13B6 /* WelcomeScreenViewController.swift in Sources */,
+				DD0BC1202A558F3900ED13B6 /* SignUpViewController.swift in Sources */,
+				DD0BC12D2A55A3C200ED13B6 /* TopicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +445,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDF33CC22A5581CB0095DBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDF33CC32A5581CC0095DBC6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDF33CC22A5581CB0095DBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DDF33CC52A5581CC0095DBC6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDF33CC22A5581CB0095DBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDF33CA32A557FD70095DBC6 /* Project object */;
 }
