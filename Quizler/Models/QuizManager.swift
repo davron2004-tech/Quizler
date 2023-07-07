@@ -91,7 +91,6 @@ class QuizManager{
         let decoder = JSONDecoder()
         do{
             let result = try decoder.decode(QuestionModel.self, from: data)
-            print(result.response_code)
             if result.response_code == 1{
                 DispatchQueue.main.async {
                     self.delegate?.errorLabel.isHidden = false

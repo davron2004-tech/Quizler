@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import FirebaseCore
-import FirebaseFirestore
 import FirebaseAuth
 
 struct LogInController{
@@ -21,9 +19,9 @@ struct LogInController{
                 delegate?.errorLabel.text = e.localizedDescription
             }
             else{
-                print(result!)
                 delegate?.performSegue(withIdentifier: "logInToHomeScreen", sender: delegate)
             }
         }
     }
+
 }

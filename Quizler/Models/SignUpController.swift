@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import FirebaseCore
-import FirebaseFirestore
 import FirebaseAuth
 struct SignUpController{
     var email = ""
@@ -20,7 +18,6 @@ struct SignUpController{
                 delegate?.errorLabel.text = e.localizedDescription
             }
             else{
-                print(result!)
                 delegate?.performSegue(withIdentifier: "signUpToHomeScreen", sender: delegate)
             }
         }

@@ -4,18 +4,22 @@
 //
 //  Created by Davron Abdukhakimov on 06/07/23.
 //
-
 import UIKit
-
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 class QuizViewController: UIViewController {
     var questions = [questionModel]()
     var order = 0
     var score = 0
+    var quizOrder = 0
     var topic = ""
     var number = ""
     var difficulty = ""
     var type = ""
     var question: questionModel?
+    var userAnswer = ""
+    var questionArray = [[String: Any]]()
     @IBOutlet weak var questionTextLabel: UILabel!
     
     @IBOutlet weak var button1: UIButton!
@@ -42,14 +46,41 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
-        if sender.currentTitle! == question?.correctAnswer{
+        userAnswer = sender.currentTitle!
+        let question2 = [
+            "questionText":question?.questionText,
+            "correctAnswer":question?.correctAnswer,
+            "userAnswer":userAnswer,
+            "answers":question?.answers
+        ] as [String : Any]
+        questionArray.append(question2)
+        if userAnswer == question?.correctAnswer{
             score += 1
         }
         if order < Int(number)!{
             nextQuestion()
         }
         else{
-            performSegue(withIdentifier: "toResult", sender: self)
+            let db = Firestore.firestore()
+            let dateCreated = Date().timeIntervalSince1970.rounded()
+            db.collection((Auth.auth().currentUser?.email)!).document(String(dateCreated)).setData([
+                "topic":topic,
+                "difficulty":difficulty,
+                "type": type,
+                "number": number,
+                "score": score,
+                "questions": questionArray,
+                "dateCreated":dateCreated
+            ]) { err in
+                if let err = err {
+                    print("Error writing document: \(err)")
+                } else {
+                    print("Document successfully written!")
+                }
+            }
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "toResult", sender: self)
+            }
         }
     }
     func nextQuestion(){
@@ -59,10 +90,10 @@ class QuizViewController: UIViewController {
         questionTextLabel.text = fixedString
         if type == "Multiple Choice"{
             let a = question?.answers.shuffled()
-            button1.setTitle(a![0], for: .normal)
-            button2.setTitle(a![1], for: .normal)
-            button3.setTitle(a![2], for: .normal)
-            button4.setTitle(a![3], for: .normal)
+            button1.setTitle(String(htmlEncodedString: a![0]), for: .normal)
+            button2.setTitle(String(htmlEncodedString: a![1]), for: .normal)
+            button3.setTitle(String(htmlEncodedString: a![2]), for: .normal)
+            button4.setTitle(String(htmlEncodedString: a![3]), for: .normal)
         }
         order += 1
         
@@ -75,16 +106,6 @@ class QuizViewController: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 

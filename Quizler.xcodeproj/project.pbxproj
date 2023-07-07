@@ -20,6 +20,9 @@
 		DD0BC1312A55CDAA00ED13B6 /* QuizSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BC1302A55CDAA00ED13B6 /* QuizSettingsViewController.swift */; };
 		DD0F240B2A56B5BD0059CAE6 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F240A2A56B5BD0059CAE6 /* QuizViewController.swift */; };
 		DD0F240D2A56F8680059CAE6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F240C2A56F8680059CAE6 /* ResultViewController.swift */; };
+		DDE74D5D2A58330B00480013 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE74D5C2A58330B00480013 /* HistoryViewController.swift */; };
+		DDE74D5F2A58364300480013 /* HistoryCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE74D5E2A58364300480013 /* HistoryCellViewController.swift */; };
+		DDE7F7F62A588693001BC75A /* HistoryQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE7F7F52A588692001BC75A /* HistoryQuestionsViewController.swift */; };
 		DDF33CAF2A557FD70095DBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF33CAE2A557FD70095DBC6 /* AppDelegate.swift */; };
 		DDF33CB12A557FD70095DBC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF33CB02A557FD70095DBC6 /* SceneDelegate.swift */; };
 		DDF33CB62A557FD70095DBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF33CB42A557FD70095DBC6 /* Main.storyboard */; };
@@ -44,6 +47,9 @@
 		DD0BC1302A55CDAA00ED13B6 /* QuizSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSettingsViewController.swift; sourceTree = "<group>"; };
 		DD0F240A2A56B5BD0059CAE6 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		DD0F240C2A56F8680059CAE6 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		DDE74D5C2A58330B00480013 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		DDE74D5E2A58364300480013 /* HistoryCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCellViewController.swift; sourceTree = "<group>"; };
+		DDE7F7F52A588692001BC75A /* HistoryQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryQuestionsViewController.swift; sourceTree = "<group>"; };
 		DDF33CAB2A557FD70095DBC6 /* Quizler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF33CAE2A557FD70095DBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDF33CB02A557FD70095DBC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,11 +131,14 @@
 				DD0BC11B2A5584FC00ED13B6 /* WelcomeScreenViewController.swift */,
 				DD0BC11F2A558F3900ED13B6 /* SignUpViewController.swift */,
 				DD0BC1212A558F4800ED13B6 /* LogInViewController.swift */,
+				DDE74D5C2A58330B00480013 /* HistoryViewController.swift */,
 				DD0BC12C2A55A3C200ED13B6 /* TopicViewController.swift */,
 				DD0BC1302A55CDAA00ED13B6 /* QuizSettingsViewController.swift */,
 				DD0F240A2A56B5BD0059CAE6 /* QuizViewController.swift */,
 				DD0F240C2A56F8680059CAE6 /* ResultViewController.swift */,
+				DDE7F7F52A588692001BC75A /* HistoryQuestionsViewController.swift */,
 				DD0BC12E2A55A47C00ED13B6 /* CellViewController.swift */,
+				DDE74D5E2A58364300480013 /* HistoryCellViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -220,8 +229,11 @@
 				DDF33CAF2A557FD70095DBC6 /* AppDelegate.swift in Sources */,
 				DD0F240D2A56F8680059CAE6 /* ResultViewController.swift in Sources */,
 				DD0BC1292A55917100ED13B6 /* LogInController.swift in Sources */,
+				DDE74D5D2A58330B00480013 /* HistoryViewController.swift in Sources */,
 				DD0F240B2A56B5BD0059CAE6 /* QuizViewController.swift in Sources */,
 				DD0BC12A2A55917100ED13B6 /* SignUpController.swift in Sources */,
+				DDE74D5F2A58364300480013 /* HistoryCellViewController.swift in Sources */,
+				DDE7F7F62A588693001BC75A /* HistoryQuestionsViewController.swift in Sources */,
 				DD0BC12F2A55A47C00ED13B6 /* CellViewController.swift in Sources */,
 				DD0BC1222A558F4800ED13B6 /* LogInViewController.swift in Sources */,
 				DDF33CB12A557FD70095DBC6 /* SceneDelegate.swift in Sources */,

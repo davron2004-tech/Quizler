@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class LogInViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
@@ -15,8 +14,8 @@ class LogInViewController: UIViewController {
     
     
     @IBOutlet weak var errorLabel: UILabel!
-    
     var logInController = LogInController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         errorLabel.isHidden = true
@@ -30,15 +29,5 @@ class LogInViewController: UIViewController {
         logInController.password = passwordTextField.text!
         logInController.checkUser()
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
