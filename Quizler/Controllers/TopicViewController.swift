@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TopicViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
+class TopicViewController: UIViewController {
     
 
     @IBOutlet weak var topicTableView: UITableView!
@@ -34,7 +34,17 @@ class TopicViewController: UIViewController, UITableViewDataSource,UITableViewDe
         topicTableView.delegate = self
         // Do any additional setup after loading the view.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "topicToSettings"{
+            let questionSettingsVC = segue.destination as! QuizSettingsViewController
+            questionSettingsVC.topic = selectedTopic
+        }
+    }
     
+
+}
+
+extension TopicViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
@@ -50,12 +60,4 @@ class TopicViewController: UIViewController, UITableViewDataSource,UITableViewDe
         selectedTopic = data[indexPath.row].label
         performSegue(withIdentifier: "topicToSettings", sender: self)
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "topicToSettings"{
-            let questionSettingsVC = segue.destination as! QuizSettingsViewController
-            questionSettingsVC.topic = selectedTopic
-        }
-    }
-    
-
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QuizSettingsViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
+class QuizSettingsViewController: UIViewController{
     var topic = ""
     var questionType = "Multiple Choice"
     var number = ""
@@ -49,11 +49,25 @@ class QuizSettingsViewController: UIViewController,UIPickerViewDataSource,UIPick
         quizManager.fetchData()
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "quizStarted"{
+            let  quizVC = segue.destination as! QuizViewController
+            quizVC.questions = self.questions
+            quizVC.difficulty = questionDifficulty
+            quizVC.topic = self.topic
+            quizVC.type = questionType
+            quizVC.number = self.number
+        }
+    }
     
+
+}
+
+
+extension QuizSettingsViewController:UIPickerViewDelegate,UIPickerViewDataSource{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView.tag == 1{
             return 3
@@ -78,16 +92,5 @@ class QuizSettingsViewController: UIViewController,UIPickerViewDataSource,UIPick
             questionType = type[row]
         }
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "quizStarted"{
-            let  quizVC = segue.destination as! QuizViewController
-            quizVC.questions = self.questions
-            quizVC.difficulty = questionDifficulty
-            quizVC.topic = self.topic
-            quizVC.type = questionType
-            quizVC.number = self.number
-        }
-    }
     
-
 }

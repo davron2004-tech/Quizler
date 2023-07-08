@@ -4,8 +4,6 @@
 //
 //  Created by Davron Abdukhakimov on 04/07/23.
 //
-
-import Foundation
 struct QuestionModel:Decodable{
     let response_code:Int
     let results:[Question]

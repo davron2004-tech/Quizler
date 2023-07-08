@@ -47,11 +47,20 @@ class QuizViewController: UIViewController {
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         userAnswer = sender.currentTitle!
+        if userAnswer == question?.correctAnswer{
+            sender.backgroundColor = UIColor.green
+        }
+        else{
+            sender.backgroundColor = UIColor.red
+        }
+        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { timer in
+            sender.backgroundColor = UIColor.white
+        }
         let question2 = [
-            "questionText":question?.questionText,
-            "correctAnswer":question?.correctAnswer,
+            "questionText":question!.questionText,
+            "correctAnswer":question!.correctAnswer,
             "userAnswer":userAnswer,
-            "answers":question?.answers
+            "answers":question!.answers
         ] as [String : Any]
         questionArray.append(question2)
         if userAnswer == question?.correctAnswer{

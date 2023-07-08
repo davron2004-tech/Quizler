@@ -4,8 +4,6 @@
 //
 //  Created by Davron Abdukhakimov on 03/07/23.
 //
-
-import SwiftUI
 import FirebaseAuth
 struct SignUpController{
     var email = ""

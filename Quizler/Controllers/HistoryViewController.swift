@@ -9,7 +9,7 @@ import UIKit
 import FirebaseCore
 import FirebaseFirestore
 import FirebaseAuth
-class HistoryViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class HistoryViewController: UIViewController{
     
     @IBOutlet weak var historyTableView: UITableView!
     var documents = [[String: Any]]()
@@ -43,6 +43,17 @@ class HistoryViewController: UIViewController,UITableViewDataSource,UITableViewD
     }
 }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toHistoryQuestions"{
+            let historyVC = segue.destination as! HistoryQuestionsViewController
+            historyVC.questions = self.documents[self.indexOrder]["questions"] as! [[String : Any]]
+            historyVC.type = self.documents[self.indexOrder]["type"] as! String
+        }
+    }
+
+}
+extension HistoryViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.documents.count
     }
@@ -91,12 +102,5 @@ class HistoryViewController: UIViewController,UITableViewDataSource,UITableViewD
         indexOrder = indexPath.row
         performSegue(withIdentifier: "toHistoryQuestions", sender: self)
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toHistoryQuestions"{
-            let historyVC = segue.destination as! HistoryQuestionsViewController
-            historyVC.questions = self.documents[self.indexOrder]["questions"] as! [[String : Any]]
-            historyVC.type = self.documents[self.indexOrder]["type"] as! String
-        }
-    }
-
+    
 }

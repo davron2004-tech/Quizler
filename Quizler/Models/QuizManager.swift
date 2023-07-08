@@ -110,7 +110,7 @@ class QuizManager{
             }
         }
         catch{
-            print(error)
+            print(error.localizedDescription)
         }
     }
     
