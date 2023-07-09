@@ -55,7 +55,7 @@ class QuizViewController: UIViewController {
             sender.backgroundColor = UIColor.red
         }
         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { timer in
-            sender.backgroundColor = UIColor.white
+            sender.backgroundColor = UIColor.systemBackground
         }
         let question2 = [
             "questionText":question!.questionText,

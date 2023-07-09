@@ -41,10 +41,10 @@ class HistoryQuestionsViewController: UIViewController {
     }
     
     func getQuestion(){
-        button1.backgroundColor = UIColor.white
-        button2.backgroundColor = UIColor.white
-        button3.backgroundColor = UIColor.white
-        button4.backgroundColor = UIColor.white
+        button1.backgroundColor = UIColor.systemBackground
+        button2.backgroundColor = UIColor.systemBackground
+        button3.backgroundColor = UIColor.systemBackground
+        button4.backgroundColor = UIColor.systemBackground
         let question = questions[order]
         if let questionText = question["questionText"] as? String{
             questionLabel.text = String(htmlEncodedString: questionText)
