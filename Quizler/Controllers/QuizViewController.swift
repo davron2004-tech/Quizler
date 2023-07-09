@@ -35,6 +35,7 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Quizler"
         if type == "True/False"{
             button1.setTitle("True", for: .normal)
             button2.setTitle("False", for: .normal)

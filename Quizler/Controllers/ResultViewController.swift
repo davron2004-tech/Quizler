@@ -15,6 +15,7 @@ class ResultViewController: UIViewController {
     var number = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Quizler"
         resultLabel.text = "\(score)/\(number)"
         // Do any additional setup after loading the view.
     }

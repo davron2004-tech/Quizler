@@ -12,6 +12,7 @@ class WelcomeScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         quizlerLabel.text = "Quizler"
+        self.title = "Quizler"
         // Do any additional setup after loading the view.
     }
     

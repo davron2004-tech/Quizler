@@ -17,6 +17,7 @@ class HistoryViewController: UIViewController{
     var indexOrder = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Quizler"
         self.historyTableView.delegate = self
         self.historyTableView.dataSource = self
         

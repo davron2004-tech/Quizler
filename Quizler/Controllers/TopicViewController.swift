@@ -30,6 +30,7 @@ class TopicViewController: UIViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Quizler"
         topicTableView.dataSource = self
         topicTableView.delegate = self
         // Do any additional setup after loading the view.

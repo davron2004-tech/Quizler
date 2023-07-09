@@ -19,6 +19,7 @@ class SignUpViewController: UIViewController {
     var signUpController = SignUpController()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Quizler"
         errorLabel.isHidden = true
         signUpController.delegate = self
         // Do any additional setup after loading the view.

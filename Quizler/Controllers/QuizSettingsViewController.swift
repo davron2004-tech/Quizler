@@ -29,6 +29,7 @@ class QuizSettingsViewController: UIViewController{
     let type = ["Multiple Choice", "True/False"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Quizler"
         errorLabel.isHidden = true
         difficultyPicker.delegate = self
         difficultyPicker.dataSource = self

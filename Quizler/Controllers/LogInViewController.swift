@@ -18,6 +18,7 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Quizler"
         errorLabel.isHidden = true
         logInController.delegate = self
         // Do any additional setup after loading the view.
